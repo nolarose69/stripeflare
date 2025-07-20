@@ -1,0 +1,15 @@
+{
+  "name": "stripeflare",
+  "dev": { "port": 3000 },
+  "compatibility_date": "2025-04-17",
+  "main": "./template.ts",
+  "assets": { "directory": "./" },
+  "durable_objects": {
+    "bindings": [{ "name": "DORM_NAMESPACE", "class_name": "DORM" }]
+  },
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["DORM"] }],
+  "routes": [
+    { "pattern": "stripeflare.com", "custom_domain": true },
+    { "pattern": "demo.stripeflare.com", "custom_domain": true }
+  ]
+}
